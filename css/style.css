@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+
+body{
+  margin: 0;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 18px;
+}
+
+p, h1, h2, h3, h4, h5, h6, a, ul, li{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  color: inherit;
+}
+
+body > a {
+  z-index: 1;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  bottom: 10px;
+  right: 20px;
+  font-size: 25px;
+  font-weight: bolder;
+  transition: all ease-in-out 250ms;
+}
+
+body > a:hover {
+  transform: scale(1.5);
+  background-image: linear-gradient(
+    to right,
+      #360033 ,
+     #0b8793
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+body > a span {
+  font-size: 16px;
+}
+
+header {
+  z-index: 1;
+  position: relative;
+  color: white;
+  height: 100vh;
+  background-image: linear-gradient(
+    to right,
+      #360033 ,
+     #0b8793
+    );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1 {
+  margin: 50px;
+}
+
+header h2 {
+  order: 2;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0;
+}
+
+header nav ul li {
+  transition: all 250ms ease-in-out;
+}
+
+header nav ul li:hover i.fa{
+  margin-right: 10px;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+section#letter p,
+section#accomplishments p,
+section#influence p,
+section#goals p,
+section#past p,
+section#share p {
+  width: 90%;
+}
+
+
+section:nth-of-type(even) {
+  background-color: hsl(254, 30%, 21%);
+  color: white;
+}
+
+section h2 {
+  padding-bottom: 60px;
+  font-size: 65px;
+  color: #360033;
+  text-shadow: 3px 3px 3px #0b8793;
+}
+
+section:nth-of-type(even) h2 {
+  color: #0b8793;
+  text-shadow: 3px 3px 3px #360033;
+}
+
+div.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.fix {
+  flex-direction: column;
+}
+
+section#symbol div.container {
+  width: 100%;
+  justify-content: space-around;
+}
+
+section#symbol div.container div {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+section#symbol div.container div img {
+  width: 65%;
+}
+
+section#symbol div.container div h3 {
+  position: absolute;
+  color: white;
+  font-size: 45px;
+  bottom: 45%;
+  left: 1000%;
+  transition: all ease-in-out 100ms;
+}
+
+section#symbol div.container div:hover h3 {
+  left: 35%;
+  text-shadow: 1.5px 2px 1.5px black;
+}
+
+section#accomplishments {
+  position: relative
+}
+
+section#accomplishments img {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px dashed #0b8793;
+  background-position: center;
+  background-size: contain;
+}
+
+section#accomplishments img:first-of-type {
+  left: 25px;
+  bottom: 320px;
+}
+
+section#accomplishments img:last-of-type {
+  right: 25px;
+  bottom: 320px;
+}
+
+section#goals div.container {
+  justify-content: space-around;
+}
+
+section#goals div div {
+  width: 90%;
+  padding: 50px;
+  margin-right: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  border: 2px solid #0b8793;
+  transition: all ease-in-out 250ms;
+}
+
+section#goals div div:first-of-type {
+  margin-left: 50px;
+}
+
+section#goals div div:first-of-type:hover {
+  background-image: url('../img/math.jpg');
+  color: white;
+  text-shadow: 2px 2px 2px black;
+
+}
+
+section#goals div div:last-of-type:hover {
+  background-image: url('../img/travel.jpg');
+  color: white;
+  text-shadow: 2px 2px 2px black;
+
+}
